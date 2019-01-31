@@ -1,2 +1,0 @@
-raw_input()--> prompts the user to input
-while x != 'Q' means while x is not equal to Q 
