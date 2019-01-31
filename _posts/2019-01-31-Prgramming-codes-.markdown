@@ -2,7 +2,6 @@
 layout: post
 title:  "Programming Codes"
 date:   2019-01-310 12:58:55 +0000
-categories: jekyll update
 ---
 
 
