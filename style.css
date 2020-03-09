@@ -1,0 +1,114 @@
+/*CSS Variables*/
+:root {
+  --primary:#a88a11;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104,104, 0.8);
+}
+
+html{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--primary);
+}
+
+body{
+  /* background: #393f4d; */
+  margin: auto;
+  line-height:1.4;
+}
+
+#grad {
+  background-image:linear-gradient(#393f4d,#1d1e22);
+}
+
+.btn {
+  background: var(--primary);
+  color: var(--light);
+  padding: 0.5rem 1.3rem;
+  tex-decoration: none;
+  border:10px;
+}
+
+img{
+max-width: 100%;
+}
+
+.wrapper{
+  display:grid;
+  grid-gap: 20px;
+}
+
+/*Navigation*/
+
+.main-nav ul {
+  display:grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style:none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main-nav a{
+  background:var(--light);
+  display: block;
+  text-decoration: none;
+  padding: 0.1rem;
+  text-align: center;
+  text-transform:uppercase;
+  font-size: 1.1rem;
+  box-shadow:var(--shadow);
+
+}
+
+.main-nav a:hover{
+  background: var(--dark);
+  color: var(--light);
+}
+
+/*Top Container */
+
+.top-container{
+  display:grid;
+  grip-gap: 20px;
+  grid-template-areas:
+  'showcase showcase showcase'
+  'showcase showcase showcase';
+}
+
+.showcase {
+  grid-area: showcase;
+  width:100%;
+  min-height: 400px;
+  background: url("airplane3.jpg");
+  background-size:cover;
+  background-position: center;
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+
+
+}
+
+.showcase h1{
+  font-size: 2rem;
+  align-content: Top;
+  margin-bottom:0;
+  margin-left:20px;
+  color: var(--light);
+}
+
+.showcase p{
+  color: var(--light);
+  font-size:1rem;
+  margin-top:20px;
+}
+
+.boxes{
+  display:grid;
+  grid-gap:20px;
+  justify-content:center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+}
