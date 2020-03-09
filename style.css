@@ -80,7 +80,7 @@ max-width: 100%;
   grid-area: showcase;
   width:100%;
   min-height: 400px;
-  background: url("airplane3.jpg");
+  background: url("Images/airplane3.jpg");
   background-size:cover;
   background-position: center;
   display:flex;
